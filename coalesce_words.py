@@ -98,7 +98,7 @@ def coalesce_into_words(char_height_dict):
                 last_char_x1 = float(char['x1'])
                 last_char_height = float(char['height'])
                
-                if char['text'] == ' ' or separation_width > relevant_char_height/3:
+                if char['text'] == char['text'] or separation_width > relevant_char_height/3:
                     if this_current_word:
                         
                         result_word_lines.append(this_current_word)
